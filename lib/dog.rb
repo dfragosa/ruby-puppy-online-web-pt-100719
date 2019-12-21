@@ -11,7 +11,11 @@ class Dog
     @save = save
   end 
   
+<<<<<<< HEAD
   def self.all      #array returns all dogs
+=======
+  def self.all()        #array returns all dogs
+>>>>>>> 8c382e1808c049f00c139e63e116f476a8172064
     @@all
   end 
   
@@ -20,6 +24,7 @@ class Dog
   end 
   
   def self.print_all
+<<<<<<< HEAD
     @@all.collect {|dogs| puts dogs.name.to_s }
   end 
   
@@ -29,3 +34,11 @@ class Dog
   
 end 
 fido = Dog.new("Fido")
+=======
+    @@all.each {|dogs| print_all}
+   # @@artists.each { |artist| artist_count[artist]+=1}
+   
+  end 
+  #binding.pry 
+end 
+>>>>>>> 8c382e1808c049f00c139e63e116f476a8172064
